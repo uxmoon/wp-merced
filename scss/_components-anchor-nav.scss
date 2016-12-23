@@ -1,0 +1,35 @@
+.menu {
+  // @include clearfix;
+
+  // margin: 0;
+  // padding-top: rem(10);
+  // padding-bottom: rem(10);
+  // margin-bottom: $base-spacing-unit;
+
+  // border-top: 1px solid $color-white;
+  // border-bottom: 1px solid $color-white;
+  // list-style-type: none;
+  // text-align: center;
+
+  li {
+    font-size: rem(20);
+    font-family: $font-hand;
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block;
+
+    padding-left: rem(10);
+    padding-right: rem(10);
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: $color-white;
+  }
+}
