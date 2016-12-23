@@ -52,6 +52,23 @@ p {
 }
 
 .entry-title {
+  color: $color-secondary;
+  font-family: $font-fredericka;
+  font-size: rem(32);
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "\2014";
+    margin-left: rem(5);
+    margin-right: rem(5);
+  }
+
+  @include breakpoint($bp-large) {
+    font-size: rem(50);
+  }
 }
 
 .entry-content {

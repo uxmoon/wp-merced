@@ -25,72 +25,40 @@ textarea {
 }
 
 input[type="submit"] {
+  background-color: $color-secondary;
   border-width: 0;
+  color: $color-white;
   cursor: pointer;
-  // font-family: $font-fugaz;
+  font-family: $font-hand;
   font-size: rem(20);
-  // color: $color-text-green;
-  // @include linear-gradient($color-green-top, $color-green-bottom);
-  padding-top: rem(5);
-  padding-bottom: rem(5);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   border-radius: 5px;
-  // text-shadow: 0 1px 0 rgba($color-white, 0.7);
 
   &:hover, &:focus {
-    // @include linear-gradient($color-green-toph, $color-green-bottomh);
     outline: none;
   }
 }
 
-form select {
-  // background-color: $color-white;
-  // border: 1px solid $color-brown;
-}
-
-
-::-webkit-input-placeholder {
-   // color: $color-text-brown;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   // color: $color-text-brown;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   // color: $color-text-brown;
-}
-
-:-ms-input-placeholder {
-   // color: $color-text-brown;
-}
-
-.o-form {
-  @include clearfix;
-}
-
-.o-form ul {
-  list-style-type: none;
-  margin: 0;
-
-  li {
-    display: inline-block;
-    margin-right: $base-spacing-unit;
-  }
-}
-
-.o-form label {
+form label {
   display: block;
-}
+  color: $color-primary;
+  font-family: $font-niconne;
+  font-size: rem(28);
 
-.o-form__column {
-  margin-bottom: $base-spacing-unit;
-}
-
-@include breakpoint($bp-large) {
-
-  .o-form__column {
-    @include span(6 of 12);
-    margin-bottom: 0;
+  @include breakpoint($bp-large) {
+    font-size: rem(35);
   }
+}
 
+form p {
+  padding-bottom: rem(5);
+  text-align: center;
+  border-bottom: 1px dashed $color-primary;
+
+  @include breakpoint($bp-large) {
+    font-family: $font-niconne;
+    color: $color-primary;
+    font-size: rem(24);
+  }
 }
