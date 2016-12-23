@@ -14,10 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info-contact">
+            <span class="site-info-phone">02656.479.268</span>
+            <a href="mailto:info@lamercedembutidos.com.ar">info@lamercedembutidos.com.ar</a>
+        </div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'merced' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'merced' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'merced' ), 'merced', '<a href="https://automattic.com/" rel="designer">Martin Luna</a>' ); ?>
+			&copy; Copyright <?php echo date('Y'); ?>. Todos los derechos reservados. <?php bloginfo( 'name' ); ?> <?php $description = get_bloginfo( 'description', 'display' ); echo $description; ?>.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

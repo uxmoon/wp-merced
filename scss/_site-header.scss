@@ -4,6 +4,7 @@
   position: relative;
   background-image: url('../images/bg-menu.png');
   background-repeat: repeat-x;
+  min-height: 104px;
 }
 
 .site-title {
@@ -14,12 +15,18 @@
   color: transparent;
   background-color: transparent;
   // image
+  background-image: url('../images/sprites/logo-la-merced-small.png');
+  width: 179px;
+  height: 180px;
+  // layout
+  margin-left: auto;
+  margin-right: auto;
 
-  // a {
-  //   display: block;
-  //   width: 256px;
-  //   height: 71px;
-  // }
+  a {
+    display: block;
+    width: 179px;
+    height: 180px;
+  }
 }
 
 .site-description {
@@ -30,10 +37,16 @@
   color: transparent;
   background-color: transparent;
   // image
+  background-image: url('../images/sprites/short-description--small.png');
+  width: 310px;
+  height: 52px;
+  // layout
+  margin-left: auto;
+  margin-right: auto;
 
-  // a {
-  //   display: block;
-  //   width: 232px;
-  //   height: 16px;
-  // }
+  a {
+    display: block;
+    width: 310px;
+    height: 52px;
+  }
 }

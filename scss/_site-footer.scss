@@ -1,46 +1,35 @@
 // Footer
 
-// .site-info-contact {
-//   margin: 0;
-//   list-style-type: none;
-//   text-align: center;
+.site-info-contact {
 
-//   li {
-//     font-size: rem(13);
-//     color: $color-white;
-//     line-height: $base-line-height;
-//   }
+  // layout
+  padding-top: $base-spacing-unit / 2;
+  padding-bottom: $base-spacing-unit / 2;
 
-//   @include breakpoint($bp-large) {
-//     position: relative;
-//     z-index: 1;
-//     margin-top: -30px;
+  // theme
+  background-color: $color-bg;
+  border-top: 1px dashed $color-secondary;
+  border-bottom: 1px dashed $color-secondary;
+  color: $color-secondary;
 
-//     li {
-//       display: inline-block;
 
-//       &::after {
-//         display: inline-block;
-//         content: "\2014";
-//         color: $color-white;
-//         margin-left: rem(5);
-//         margin-right: rem(5);
-//       }
+  // typo
+  text-align: center;
+  font-family: $font-fredericka;
+  font-size: rem(24);
 
-//       &:last-child::after {
-//         content: "";
-//       }
-//     }
-//   }
+  a {
+    color: $color-secondary;
+    font-size: rem(18);
+  }
 
-// }
+}
 
 .site-info {
-  // @include container;
-  // @include clearfix;
-  // text-align: center;
-  // padding-top: $base-spacing-unit;
-  // padding-bottom: $base-spacing-unit;
+  text-align: center;
+  font-size: rem(12);
+  padding-top: $base-spacing-unit;
+  padding-bottom: $base-spacing-unit;
 
   // @include breakpoint($bp-large) {
   //   text-align: left;
