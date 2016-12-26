@@ -39,15 +39,6 @@
 
     ?>
 
-<!--     <div class="row">
-      <div class="columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illum laboriosam, quod aliquam fugit, optio molestias, odio eum unde delectus assumenda autem. Similique sapiente vel, amet nisi debitis maxime officiis?</p>
-      </div>
-      <div class="columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque accusamus, temporibus maxime blanditiis tempora quia facere numquam beatae optio aliquam dolorem magni sunt totam. Incidunt odit consequatur beatae numquam, inventore.</p>
-      </div>
-    </div> -->
-
     <div class="c-message">
       <?php the_content(); ?>
     </div>
