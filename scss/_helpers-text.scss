@@ -10,11 +10,17 @@
 @include breakpoint($bp-large) {
 
   .u-text-niconne {
+    display: block;
     font-family: $font-niconne;
+    font-size: rem(56);
+    line-height: rem(58);
   }
 
   .u-text-hand {
     font-family: $font-hand;
+    font-size: rem(58);
+    line-height: rem(60);
+    text-transform: uppercase;
   }
 
   .u-text-fredericka {

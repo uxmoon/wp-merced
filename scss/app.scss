@@ -127,17 +127,24 @@ p {
 // Homepage
 
 .c-message {
-  padding-bottom: rem(430);
+  padding-bottom: rem(240);
   text-align: center;
   background-image: url('../images/productos-frescos.png');
   background-repeat: no-repeat;
   background-position: top 100px center;
   background-size: contain;
-  min-height: 430px;
+
+  @include breakpoint($bp-medium) {
+    padding-bottom: rem(400);
+    background-size: auto auto;
+  }
 
   @include breakpoint($bp-large) {
+    min-height: 430px;
+    padding-bottom: 0;
     text-align: left;
     background-position: bottom right;
+    background-size: auto auto;
 
     .c-message__word {
       display: block;
