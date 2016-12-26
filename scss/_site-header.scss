@@ -15,7 +15,7 @@
   color: transparent;
   background-color: transparent;
   // image
-  // background-image: url('../images/sprites/logo-la-merced-small.png');
+  background-image: url('../images/sprites/logo-la-merced-small.png');
   width: 179px;
   height: 180px;
   // layout
@@ -37,10 +37,11 @@
   color: transparent;
   background-color: transparent;
   // image
-  // background-image: url('../images/sprites/short-description--small.png');
+  background-image: url('../images/sprites/short-description--small.png');
   width: 310px;
   height: 52px;
   // layout
+  margin-top: -45px;
   margin-left: auto;
   margin-right: auto;
 
