@@ -1,11 +1,26 @@
-.u-text-niconne {
-  font-family: $font-niconne;
-}
-
-.u-text-hand {
-  font-family: $font-hand;
-}
-
+.u-text-niconne,
+.u-text-hand,
 .u-text-fredericka {
   font-family: $font-fredericka;
+  font-size: rem(24);
+  font-weight: 400;
+}
+
+
+@include breakpoint($bp-large) {
+
+  .u-text-niconne {
+    font-family: $font-niconne;
+  }
+
+  .u-text-hand {
+    font-family: $font-hand;
+  }
+
+  .u-text-fredericka {
+    font-family: $font-fredericka;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
 }

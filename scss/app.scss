@@ -98,3 +98,65 @@ p {
 // helpers
 
 @import "helpers-text";
+
+// Button
+
+.c-button {
+  padding: rem(14) 0 rem(7);
+  display: block;
+  max-width: 320px;
+  line-height: 1;
+  background-color: $color-secondary;
+  color: $color-white;
+  cursor: pointer;
+  font-family: $font-hand;
+  font-size: rem(20);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+
+  @include breakpoint($bp-mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+// Homepage
+
+.c-message {
+  padding-bottom: rem(430);
+  text-align: center;
+  background-image: url('../images/productos-frescos.png');
+  background-repeat: no-repeat;
+  background-position: top 100px center;
+  background-size: contain;
+  min-height: 430px;
+
+  @include breakpoint($bp-large) {
+    text-align: left;
+    background-position: bottom right;
+
+    .c-message__word {
+      display: block;
+    }
+
+    .c-message__word:nth-child(1) {
+      font-size: rem(52);
+      line-height: rem(55);
+    }
+
+    .c-message__word:nth-child(2) {
+      font-size: rem(40);
+      line-height: rem(42);
+    }
+
+    .c-message__word:nth-child(3) {
+      font-size: rem(77);
+      line-height: rem(79);
+    }
+
+  }
+}

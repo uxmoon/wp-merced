@@ -1,4 +1,11 @@
 .c-carousel {
-  // border: 2px solid red;
   background-color: green;
+  margin-bottom: $base-spacing-unit;
+
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+
 }
+
