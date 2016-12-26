@@ -20,7 +20,32 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+        if ( is_page( array( 6, 89 )  ) ) {
+
+          get_template_part( 'template-parts/content', 'page-home' );
+
+        } elseif ( is_page( array( 8, 7 ) ) ) {
+
+          get_template_part( 'template-parts/content', 'page-products' );
+
+        } elseif ( is_page( array( 10, 23 ) ) ) {
+
+          get_template_part( 'template-parts/content', 'page-store' );
+
+        } elseif ( is_page( array( 12, 25 ) ) ) {
+
+          get_template_part( 'template-parts/content', 'page-location' );
+
+        } elseif ( is_page( array( 14, 9 ) ) ) {
+
+          get_template_part( 'template-parts/content', 'page-contact' );
+
+        } else {
+
+          get_template_part( 'template-parts/content', 'page' );
+
+        }
+
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -34,5 +59,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
