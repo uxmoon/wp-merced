@@ -147,10 +147,15 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+// require get_template_directory() . '/inc/jetpack.php';
 
 
 /**
  * Tweaks
  */
 require get_template_directory() . '/inc/tweaks.php';
+
+/**
+ * Plugin: Meta box
+ */
+require get_template_directory() . '/inc/meta-box.php';
