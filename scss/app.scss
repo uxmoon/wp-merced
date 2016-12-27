@@ -134,6 +134,14 @@ p {
   background-position: top 100px center;
   background-size: contain;
 
+  @include breakpoint($bp-mobile-only) {
+
+    .c-button {
+      margin-top: rem(12);
+    }
+
+  }
+
   @include breakpoint($bp-medium) {
     padding-bottom: rem(400);
     background-size: auto auto;
