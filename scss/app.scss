@@ -177,10 +177,28 @@ p {
 }
 
 
-.c-history {}
-.c-history h3 {}
-.c-history p {}
-.c-history__quote {}
+@include breakpoint($bp-mobile-only) {
+  .c-history {
+    margin-bottom: $base-spacing-unit;
+  }
+}
+
+.c-history h3 {
+  font-family: $font-niconne;
+  font-size: rem(47);
+  color: $color-primary;
+}
+
+.c-history p {
+  font-family: $font-niconne;
+  font-size: rem(25);
+  color: $color-primary;
+}
+
+.c-history__quote {
+  font-family: $font-niconne;
+  font-size: rem(25);
+}
 
 @include breakpoint($bp-large){
   .c-history {
@@ -193,7 +211,12 @@ p {
 
   }
   .c-history__quote {
-
+    background-image: url('../images/bg-history-quote.png');
+    background-repeat: no-repeat;
+    padding-left: rem(150);
+    padding-top: rem(18);
+    min-height: rem(100);
+    max-width: 420px;
   }
 }
 
