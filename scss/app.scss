@@ -302,3 +302,61 @@ p {
   }
 
 }
+
+// Products
+
+.c-products {
+  @include clearfix;
+  // border-bottom: 1px solid red;
+}
+
+.c-products__title {
+  font-family: $font-niconne;
+  font-size: rem(28);
+  font-weight: 400;
+  text-align: center;
+  color: $color-primary;
+}
+
+.c-products__content {
+
+  @include breakpoint($bp-large) {
+
+    float: right;
+    width: 34%;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: $base-spacing-unit;
+
+    &::after {
+      display: inline-block;
+      content: "\2014";
+      text-align: center;
+      width: 100%;
+      color: $color-primary;
+      font-size: rem(32);
+    }
+
+  }
+
+  li {
+    font-family: $font-fredericka;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: $color-primary;
+    font-size: rem(24);
+  }
+}
+
+.c-products__image {
+  @include breakpoint($bp-large) {
+    float: right;
+    width: 66%;
+
+  }
+}
