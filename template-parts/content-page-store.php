@@ -20,23 +20,23 @@
       while ( have_posts() ) :
         the_post(); ?>
 
-    <?php the_content(); ?>
+    <?php
+      // Do stuff with the post content.
+      $images = rwmb_meta( 'embutidos_imgadv', 'type=image&size=full' );
+
+      echo "\n<div class=\"c-carousel\">";
+
+      foreach ( $images as $image ) {
+
+        $sizes = wp_calculate_image_sizes( array( $image['width'], $image['height'] ), null, null, $image['ID'] );
+
+        echo "\n<div><img src=\"{$image['url']}\" alt=\"{$image['alt']}\" srcset=\"{$image['srcset']}\" sizes=\"{$sizes}\" /></div>";
+      }
+
+      echo "\n</div>";
+    ?>
 
     <?php
-        // Do stuff with the post content.
-        $images = rwmb_meta( 'embutidos_imgadv', 'type=image&size=full' );
-
-        echo "\n<div class=\"c-carousel\">";
-
-        foreach ( $images as $image ) {
-
-          $sizes = wp_calculate_image_sizes( array( $image['width'], $image['height'] ), null, null, $image['ID'] );
-
-          echo "\n<div><img src=\"{$image['url']}\" alt=\"{$image['alt']}\" srcset=\"{$image['srcset']}\" sizes=\"{$sizes}\" /></div>";
-        }
-
-        echo "\n</div>";
-
       endwhile;
     else:
         // Insert any content or load a template for no posts found.
@@ -45,6 +45,8 @@
     wp_reset_query();
 
     ?>
+
+    <?php the_content(); ?>
 
   </div><!-- .entry-content -->
 

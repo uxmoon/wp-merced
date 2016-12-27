@@ -175,3 +175,92 @@ p {
 
   }
 }
+
+
+.c-history {}
+.c-history h3 {}
+.c-history p {}
+.c-history__quote {}
+
+@include breakpoint($bp-large){
+  .c-history {
+    @include span(6 of 12);
+  }
+  .c-history h3 {
+
+  }
+  .c-history p {
+
+  }
+  .c-history__quote {
+
+  }
+}
+
+// Location Box
+
+.c-location-box {
+
+}
+
+.c-location-box h4 {
+  color: $color-primary;
+  font-family: $font-fredericka;
+  font-size: rem(24);
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "\2014";
+    margin-left: rem(5);
+    margin-right: rem(5);
+  }
+
+}
+
+.c-location-box__map {
+  position: relative;
+  margin-bottom: rem(10);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  border: 7px solid $color-border;
+}
+
+.c-location-box__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+}
+
+.c-location-box__address {
+  color: $color-primary;
+  font-family: $font-niconne;
+  font-size: rem(24);
+  text-align: center;
+}
+
+@include breakpoint($bp-large) {
+
+  .c-location-box {
+    @include span(6 of 12);
+  }
+  .c-location-box h4 {
+
+  }
+  .c-location-box__map {
+    padding-bottom: 75%;
+  }
+
+  .c-location-box__address {
+    color: $color-primary;
+    font-family: $font-niconne;
+    font-size: rem(30);
+  }
+
+}

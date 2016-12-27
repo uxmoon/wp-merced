@@ -20,10 +20,12 @@
   width: 179px;
   height: 180px;
   // layout
-  margin-top: -80px;
   margin-left: auto;
   margin-right: auto;
-  // visibility: hidden;
+
+  @include breakpoint($bp-large) {
+    margin-top: -80px;
+  }
 
   a {
     display: block;
@@ -44,10 +46,13 @@
   width: 310px;
   height: 52px;
   // layout
-  margin-top: -45px;
   margin-left: auto;
   margin-right: auto;
   // visibility: hidden;
+
+  @include breakpoint($bp-large) {
+    margin-top: -45px;
+  }
 
   a {
     display: block;
