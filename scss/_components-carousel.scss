@@ -5,26 +5,30 @@
   border: 7px solid $color-border;
   box-shadow: 0 0 1px $color-black;
 
-  &::before,
-  &::after, {
-    position: absolute;
-    z-index: 1;
-    content: '';
-    display: block;
-    width: 52px;
-    height: 54px;
-  }
+  @include breakpoint($bp-medium) {
 
-  &::before {
-    top: -20px;
-    right: -20px;
-    background-image: url('../images/carousel-border-top.png');
-  }
+    &::before,
+    &::after, {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      display: block;
+      width: 52px;
+      height: 54px;
+    }
 
-  &::after {
-    bottom: -20px;
-    left: -20px;
-    background-image: url('../images/carousel-border-bottom.png');
+    &::before {
+      top: -20px;
+      right: -20px;
+      background-image: url('../images/carousel-border-top.png');
+    }
+
+    &::after {
+      bottom: -20px;
+      left: -20px;
+      background-image: url('../images/carousel-border-bottom.png');
+    }
+
   }
 
   .slick-slide img {
