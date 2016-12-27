@@ -1,10 +1,9 @@
 .c-carousel {
   background-color: green;
   margin-bottom: $base-spacing-unit;
+  border: 7px solid $color-border;
+  box-shadow: 0 0 1px $color-black;
 
-  @include breakpoint($bp-mobile-only) {
-    border: 7px solid $color-border;
-  }
 
   .slick-slide img {
     width: 100%;
