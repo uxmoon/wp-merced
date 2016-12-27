@@ -249,18 +249,27 @@ p {
 
   .c-location-box {
     @include span(6 of 12);
+    background-image: url('../images/bg-iframe.png');
+    background-repeat: no-repeat;
   }
-  .c-location-box h4 {
 
+  .c-location-box h4 {
+    margin-top: rem(25);
+    // margin-bottom: 0;
+    line-height: 1;
   }
+
   .c-location-box__map {
-    padding-bottom: 75%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 65%;
   }
 
   .c-location-box__address {
-    color: $color-primary;
-    font-family: $font-niconne;
     font-size: rem(30);
+    text-align: left;
+    padding-left: rem(100);
+    margin-bottom: rem(30);
   }
 
 }
