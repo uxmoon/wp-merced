@@ -16,12 +16,14 @@
   background-color: transparent;
   // image
   background-image: url('../images/sprites/logo-la-merced-small.png');
+  // background-color: #000;
   width: 179px;
   height: 180px;
   // layout
+  margin-top: -80px;
   margin-left: auto;
   margin-right: auto;
-  visibility: hidden;
+  // visibility: hidden;
 
   a {
     display: block;
@@ -45,7 +47,7 @@
   margin-top: -45px;
   margin-left: auto;
   margin-right: auto;
-  visibility: hidden;
+  // visibility: hidden;
 
   a {
     display: block;
