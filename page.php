@@ -36,10 +36,6 @@ get_header(); ?>
 
           get_template_part( 'template-parts/content', 'page-location' );
 
-        } elseif ( is_page( array( 14, 9 ) ) ) {
-
-          get_template_part( 'template-parts/content', 'page-contact' );
-
         } else {
 
           get_template_part( 'template-parts/content', 'page' );

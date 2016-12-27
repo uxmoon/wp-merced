@@ -360,3 +360,101 @@ p {
 
   }
 }
+
+
+// Contact Page
+
+.c-contact {
+  @include clearfix;
+}
+
+.c-contact__info {
+  display: none;
+}
+
+
+
+@include breakpoint($bp-large) {
+
+  .c-contact__form {
+    @include span(7 of 12);
+  }
+
+  .c-contact__info {
+    display: block;
+    margin-bottom: $base-spacing-unit;
+    @include span(5 of 12);
+  }
+
+  .c-contact__item-phone,
+  .c-contact__item-mail {
+    min-height: 245px;
+    background-image: url('../images/bg-contact-phone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: $base-spacing-unit;
+  }
+
+  .c-contact__item-mail {
+    background-image: url('../images/bg-contact-mail.png');
+  }
+
+  .c-contact__item-phone {
+    // padding-left: 200px;
+    // padding-left: rem(170);
+  }
+
+  .c-contact__item-mail {
+    // pdl200
+  }
+
+  .c-contact__title {
+    padding-top: rem(20);
+    margin-bottom: $base-spacing-unit;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-family: $font-fredericka;
+    font-weight: 400;
+    font-size: rem(20);
+    text-align: center;
+
+    .c-contact__item-phone & {
+      padding-left: rem(170);
+    }
+
+    .c-contact__item-mail & {
+      padding-left: rem(155);
+    }
+
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "\2014";
+      margin-left: rem(5);
+      margin-right: rem(5);
+    }
+
+  }
+
+  .c-contact__copy {
+    font-family: $font-fredericka;
+    font-size: rem(20);
+    letter-spacing: 0.05em;
+    color: $color-primary;
+
+    .c-contact__item-phone & {
+      padding-left: rem(210);
+    }
+
+    .c-contact__item-mail & {
+      padding-top: rem(40);
+      text-align: center;
+    }
+
+    a {
+      color: $color-primary;
+    }
+
+  }
+
+}
