@@ -196,8 +196,12 @@ p {
 }
 
 .c-history__quote {
+  padding-top: rem(5);
+  padding-bottom: rem(5);
   font-family: $font-niconne;
   font-size: rem(25);
+  border-top: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-secondary;
 }
 
 @include breakpoint($bp-large){
@@ -217,13 +221,14 @@ p {
     padding-top: rem(18);
     min-height: rem(100);
     max-width: 420px;
+    border-width: 0;
   }
 }
 
 // Location Box
 
 .c-location-box {
-
+  margin-bottom: $base-spacing-unit;
 }
 
 .c-location-box h4 {
@@ -272,6 +277,7 @@ p {
 
   .c-location-box {
     @include span(6 of 12);
+    margin-bottom: 0;
     background-image: url('../images/bg-iframe.png');
     background-repeat: no-repeat;
   }
