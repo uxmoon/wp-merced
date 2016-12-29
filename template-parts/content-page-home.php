@@ -19,7 +19,7 @@
         // Do stuff with the post content.
         $images = rwmb_meta( 'embutidos_imgadv', 'type=image&size=full' );
 
-        echo "\n<div class=\"c-carousel\">";
+        echo "\n<div class=\"c-carousel-wrapper\"><div class=\"c-carousel\">";
 
         foreach ( $images as $image ) {
 
@@ -28,7 +28,7 @@
           echo "\n<div><img src=\"{$image['url']}\" alt=\"{$image['alt']}\" srcset=\"{$image['srcset']}\" sizes=\"{$sizes}\" /></div>";
         }
 
-        echo "\n</div>";
+        echo "\n</div></div>";
 
       endwhile;
     else:
