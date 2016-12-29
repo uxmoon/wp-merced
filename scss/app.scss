@@ -20,6 +20,7 @@
 // Slick
 @import "slick";
 @import "slick-theme";
+@import "icons";
 
 // Accessibility
 @import "accessibility";
@@ -205,15 +206,11 @@ p {
 }
 
 @include breakpoint($bp-large){
+
   .c-history {
     @include span(6 of 12);
   }
-  .c-history h3 {
 
-  }
-  .c-history p {
-
-  }
   .c-history__quote {
     background-image: url('../images/bg-history-quote.png');
     background-repeat: no-repeat;
@@ -223,6 +220,7 @@ p {
     max-width: 420px;
     border-width: 0;
   }
+
 }
 
 // Location Box
@@ -284,7 +282,6 @@ p {
 
   .c-location-box h4 {
     margin-top: rem(25);
-    // margin-bottom: 0;
     line-height: 1;
   }
 
@@ -307,7 +304,6 @@ p {
 
 .c-products {
   @include clearfix;
-  // border-bottom: 1px solid red;
 }
 
 .c-products__title {
@@ -457,4 +453,57 @@ p {
 
   }
 
+}
+
+
+
+.c-location__map {
+  position: relative;
+  margin-bottom: rem(10);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  border: 7px solid $color-border;
+}
+
+.c-location__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+}
+
+.c-location__address,
+.c-location__hours {
+  color: $color-primary;
+  font-family: $font-niconne;
+  font-size: rem(20);
+
+  @include breakpoint($bp-large) {
+    font-size: rem(24);
+  }
+}
+
+@include breakpoint($bp-large) {
+
+  .page-id-12 .entry-content {
+    background-image: url('../images/bg-location.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .c-location {
+    padding: 3rem 3rem 4rem;
+  }
+
+  .c-location__content {
+    @include container;
+  }
+
+  .c-location__address,
+  .c-location__hours {
+    @include span(6 of 12);
+  }
 }
