@@ -8,21 +8,27 @@
   font-weight: 400;
   text-align: center;
   color: $color-primary;
+
+  @include breakpoint($bp-large) {
+    font-size: rem(32);
+  }
+
 }
 
 .c-products__content {
 
   @include breakpoint($bp-large) {
-
     float: right;
     width: 34%;
-
   }
 
   ul {
     list-style-type: none;
     margin-left: 0;
-    margin-bottom: $base-spacing-unit;
+
+    @include breakpoint($bp-large) {
+      margin-bottom: $base-spacing-unit;
+    }
 
     &::after {
       display: inline-block;
@@ -42,13 +48,19 @@
     display: block;
     color: $color-primary;
     font-size: rem(24);
+
+    @include breakpoint($bp-large) {
+      font-size: rem(36);
+    }
+
   }
 }
 
-.c-products__image {
-  @include breakpoint($bp-large) {
+@include breakpoint($bp-large) {
+
+  .c-products__image {
     float: right;
     width: 66%;
-
   }
+
 }
