@@ -104,9 +104,9 @@ add_action( 'widgets_init', 'merced_widgets_init' );
 function merced_scripts() {
 	// wp_enqueue_style( 'merced-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'quechalen-fonts', 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Just+Another+Hand|Niconne' );
+	wp_enqueue_style( 'merced-fonts', 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Just+Another+Hand|Niconne' );
 
-	wp_enqueue_style( 'quechalen-theme', get_template_directory_uri() . '/css/app.css' );
+	wp_enqueue_style( 'merced-theme', get_template_directory_uri() . '/css/app.css' );
 
 	wp_enqueue_script( 'merced-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js', array( 'jquery' ), '20151215', true );
 

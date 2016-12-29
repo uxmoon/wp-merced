@@ -40,29 +40,29 @@ remove_action('wp_head', 'wp_generator');
 add_filter('the_generator', '__return_empty_string');
 
 // remove version from scripts and styles
-function quechalen_remove_version_scripts_styles($src) {
+function merced_remove_version_scripts_styles($src) {
   if (strpos($src, 'ver=')) {
     $src = remove_query_arg('ver', $src);
   }
   return $src;
 }
-add_filter('style_loader_src', 'quechalen_remove_version_scripts_styles', 9999);
-add_filter('script_loader_src', 'quechalen_remove_version_scripts_styles', 9999);
+add_filter('style_loader_src', 'merced_remove_version_scripts_styles', 9999);
+add_filter('script_loader_src', 'merced_remove_version_scripts_styles', 9999);
 
 // block proxy visits @ http://m0n.co/01
-function quechalen_block_proxy_visits() {
+function merced_block_proxy_visits() {
   if (@fsockopen($_SERVER['REMOTE_ADDR'], 80, $errstr, $errno, 1)) {
     die('Proxy access not allowed');
   }
 }
-add_action('after_setup_theme', 'quechalen_block_proxy_visits');
+add_action('after_setup_theme', 'merced_block_proxy_visits');
 
 //Page Slug Body Class
-function quechalen_add_slug_body_class( $classes ) {
+function merced_add_slug_body_class( $classes ) {
   global $post;
   if ( isset( $post ) ) {
     $classes[] = $post->post_type . '-' . $post->post_name;
   }
   return $classes;
 }
-add_filter( 'body_class', 'quechalen_add_slug_body_class' );
+add_filter( 'body_class', 'merced_add_slug_body_class' );
