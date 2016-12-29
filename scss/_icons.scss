@@ -32,3 +32,13 @@ Single-colored icons can be modified like so:
 .icon-arrow-right {
   width: 0.33928571428571425em;
 }
+
+.icon-spinner {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  z-index: 1;
+  fill: white;
+  width: 1.5em;
+  height: 1.5em;
+}

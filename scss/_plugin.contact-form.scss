@@ -1,14 +1,15 @@
-div.wpcf7 {
+.wpcf7 {
   margin: 0;
   padding: 0;
 }
 
-div.wpcf7-response-output {
-  margin: 2em 0.5em 1em;
-  padding: 0.2em 1em;
+.wpcf7-response-output {
+  margin: rem(10) 0 0;
+  padding: rem(10) rem(15);
+  border-radius: rem(5);
 }
 
-div.wpcf7 .screen-reader-response {
+.wpcf7 .screen-reader-response {
   position: absolute;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
@@ -19,20 +20,20 @@ div.wpcf7 .screen-reader-response {
   border: 0;
 }
 
-div.wpcf7-mail-sent-ok {
-  border: 2px solid #398f14;
+.wpcf7-mail-sent-ok {
+  background-color: $color-cf7-green;
 }
 
-div.wpcf7-mail-sent-ng {
-  border: 2px solid #ff0000;
+.wpcf7-mail-sent-ng {
+  background-color: $color-cf7-red;
 }
 
-div.wpcf7-spam-blocked {
-  border: 2px solid #ffa500;
+.wpcf7-spam-blocked {
+  background-color: $color-cf7-orange;
 }
 
-div.wpcf7-validation-errors {
-  border: 2px solid #f7e700;
+.wpcf7-validation-errors {
+  background-color: $color-cf7-yellow;
 }
 
 .wpcf7-form-control-wrap {
@@ -40,8 +41,9 @@ div.wpcf7-validation-errors {
 }
 
 span.wpcf7-not-valid-tip {
+  padding-top: rem(5);
   color: #f00;
-  font-size: 1em;
+  font-size: rem(14);
   display: block;
 }
 
@@ -50,57 +52,39 @@ span.wpcf7-not-valid-tip {
   top: 20%;
   left: 20%;
   z-index: 100;
-  border: 1px solid #ff0000;
-  background: #fff;
+  border: 1px solid $color-cf7-red;
+  background: $color-white;
   padding: .2em .8em;
-}
-
-span.wpcf7-list-item {
-  display: inline-block;
-  margin: 0 0 0 1em;
-}
-
-span.wpcf7-list-item-label::before,
-span.wpcf7-list-item-label::after {
-  content: " ";
 }
 
 .wpcf7-display-none {
   display: none;
 }
 
-div.wpcf7 .ajax-loader {
-  visibility: hidden;
-  display: inline-block;
-  background-image: url('../../images/ajax-loader.gif');
-  width: 16px;
-  height: 16px;
-  border: none;
-  padding: 0;
-  margin: 0 0 0 4px;
-  vertical-align: middle;
+.wpcf7 .c-form__cta {
+  position: relative;
 }
 
-div.wpcf7 .ajax-loader.is-active {
-  visibility: visible;
-}
-
-div.wpcf7 div.ajax-error {
+.wpcf7 .ajax-loader {
   display: none;
 }
 
-div.wpcf7 .placeheld {
-  color: #888;
+.wpcf7 .ajax-loader.is-active {
+  visibility: visible;
 }
 
-div.wpcf7 .wpcf7-recaptcha iframe {
+.wpcf7 .ajax-error {
+  display: none;
+}
+
+.wpcf7 .placeheld {
+  color: $color-black;
+}
+
+.wpcf7 .wpcf7-recaptcha iframe {
   margin-bottom: 0;
 }
 
-div.wpcf7 input[type="file"] {
-  cursor: pointer;
-}
-
-div.wpcf7 input[type="file"]:disabled {
-  cursor: default;
+.wpcf7 p {
+  margin-top: rem(10);
 }

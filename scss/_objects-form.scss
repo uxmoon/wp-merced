@@ -4,7 +4,7 @@ input[type="tel"],
 input[type="submit"],
 textarea {
   width: 100%;
-  margin-bottom: $base-spacing-unit / 2;
+  // margin-bottom: $base-spacing-unit / 2;
   border-width: 1px;
   border-style: solid;
   // border-color: $color-brown;
@@ -40,11 +40,20 @@ input[type="submit"] {
   }
 }
 
+form {
+  margin-bottom: $base-spacing-unit;
+}
+
 form label {
+  margin-top: rem(15);
   display: block;
   color: $color-primary;
   font-family: $font-niconne;
   font-size: rem(28);
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   @include breakpoint($bp-large) {
     font-size: rem(35);

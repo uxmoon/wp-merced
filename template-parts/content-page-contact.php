@@ -4,6 +4,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+<!-- <svg class="icon icon-spinner animate-spin"><use xlink:href="#icon-spinner"></use></svg> -->
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
