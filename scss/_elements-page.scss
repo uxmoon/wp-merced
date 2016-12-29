@@ -4,3 +4,42 @@ body {
   background-color: $color-bg;
   background-image: url('../images/bg.png');
 }
+
+p {
+  font-size: rem(14);
+  line-height: $base-line-height;
+}
+
+.site-content {
+  position: relative;
+}
+
+.site-main {
+  @include container;
+
+  @include breakpoint($bp-mobile-only) {
+    margin-left: gutter();
+    margin-right: gutter();
+  }
+}
+
+.entry-title {
+  color: $color-secondary;
+  font-family: $font-fredericka;
+  font-size: rem(32);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    content: "\2014";
+    margin-left: rem(5);
+    margin-right: rem(5);
+  }
+
+  @include breakpoint($bp-large) {
+    font-size: rem(50);
+  }
+}

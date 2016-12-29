@@ -1,0 +1,49 @@
+.c-message {
+  padding-bottom: rem(240);
+  text-align: center;
+  background-image: url('../images/productos-frescos.png');
+  background-repeat: no-repeat;
+  background-position: top 100px center;
+  background-size: contain;
+
+  @include breakpoint($bp-mobile-only) {
+
+    .c-button {
+      margin-top: rem(12);
+    }
+
+  }
+
+  @include breakpoint($bp-medium) {
+    padding-bottom: rem(400);
+    background-size: auto auto;
+  }
+
+  @include breakpoint($bp-large) {
+    min-height: 430px;
+    padding-bottom: 0;
+    text-align: left;
+    background-position: bottom right;
+    background-size: auto auto;
+
+    .c-message__word {
+      display: block;
+    }
+
+    .c-message__word:nth-child(1) {
+      font-size: rem(52);
+      line-height: rem(55);
+    }
+
+    .c-message__word:nth-child(2) {
+      font-size: rem(40);
+      line-height: rem(42);
+    }
+
+    .c-message__word:nth-child(3) {
+      font-size: rem(77);
+      line-height: rem(79);
+    }
+
+  }
+}

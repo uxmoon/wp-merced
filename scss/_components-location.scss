@@ -1,0 +1,50 @@
+.c-location__map {
+  position: relative;
+  margin-bottom: rem(10);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  border: 7px solid $color-border;
+}
+
+.c-location__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+}
+
+.c-location__address,
+.c-location__hours {
+  color: $color-primary;
+  font-family: $font-niconne;
+  font-size: rem(20);
+
+  @include breakpoint($bp-large) {
+    font-size: rem(24);
+  }
+}
+
+@include breakpoint($bp-large) {
+
+  .page-id-12 .entry-content {
+    background-image: url('../images/bg-location.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .c-location {
+    padding: 3rem 3rem 4rem;
+  }
+
+  .c-location__content {
+    @include container;
+  }
+
+  .c-location__address,
+  .c-location__hours {
+    @include span(6 of 12);
+  }
+}
