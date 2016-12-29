@@ -20,7 +20,8 @@
 .c-location__hours {
   color: $color-primary;
   font-family: $font-niconne;
-  font-size: rem(20);
+  font-size: rem(24);
+  text-align: center;
 
   @include breakpoint($bp-large) {
     font-size: rem(24);
