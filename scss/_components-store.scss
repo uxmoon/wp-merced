@@ -23,9 +23,10 @@
   font-size: rem(25);
   border-top: 1px solid $color-secondary;
   border-bottom: 1px solid $color-secondary;
+  text-align: center;
 }
 
-@include breakpoint($bp-large){
+@include breakpoint($bp-large) {
 
   .c-history {
     @include span(6 of 12);
@@ -39,6 +40,7 @@
     min-height: rem(100);
     max-width: 420px;
     border-width: 0;
+    text-align: left;
   }
 
 }
@@ -114,7 +116,7 @@
   .c-location-box__address {
     font-size: rem(30);
     text-align: left;
-    padding-left: rem(100);
+    padding-left: rem(30);
     margin-bottom: rem(30);
   }
 
