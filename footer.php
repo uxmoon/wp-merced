@@ -21,7 +21,7 @@
       </div>
     </div>
 		<div class="site-info">
-			&copy; Copyright <?php echo date('Y'); ?>. Todos los derechos reservados. <?php bloginfo( 'name' ); ?> <?php $description = get_bloginfo( 'description', 'display' ); echo $description; ?>.
+			&copy; Copyright <?php echo date('Y'); ?>. Todos los derechos reservados. <?php bloginfo( 'name' ); ?> &#8211; <?php $description = get_bloginfo( 'description', 'display' ); echo $description; ?>.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

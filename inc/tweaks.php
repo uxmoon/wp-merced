@@ -57,3 +57,12 @@ function quechalen_block_proxy_visits() {
 }
 add_action('after_setup_theme', 'quechalen_block_proxy_visits');
 
+//Page Slug Body Class
+function quechalen_add_slug_body_class( $classes ) {
+  global $post;
+  if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+  }
+  return $classes;
+}
+add_filter( 'body_class', 'quechalen_add_slug_body_class' );
