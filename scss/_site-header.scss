@@ -15,7 +15,7 @@
   color: transparent;
   background-color: transparent;
   // image
-  background-image: url('../images/sprites/logo-la-merced-small.png');
+  background-image: url('../images/logo-la-merced.png');
   // background-color: #000;
   width: 179px;
   height: 180px;
@@ -42,7 +42,7 @@
   color: transparent;
   background-color: transparent;
   // image
-  background-image: url('../images/sprites/short-description--small.png');
+  background-image: url('../images/short-description--small.png');
   width: 310px;
   height: 52px;
   // layout
@@ -51,7 +51,10 @@
   // visibility: hidden;
 
   @include breakpoint($bp-large) {
-    margin-top: -45px;
+    margin-top: -60px;
+    background-image: url('../images/short-description.png');
+    width: 449px;
+    height: 76px;
   }
 
   a {
