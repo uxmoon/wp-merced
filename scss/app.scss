@@ -16,7 +16,11 @@
 @import "elements-page";
 @import "elements-links";
 @import "elements-icons";
+@import "site-header";
+@import "site-footer";
 
+// Objects
+@import "objects-form";
 
 // Components
 @import "components-anchor-nav";
@@ -29,26 +33,13 @@
 @import "components-location";
 @import "components-animation";
 
-
-// Slick
+// Slider
 @import "slick";
 @import "slick-theme";
-@import "icons";
-
-// Accessibility
-@import "accessibility";
 
 // Plugin
 @import "plugin.contact-form";
 
-
-// components
-
-@import "site-header";
-@import "site-footer";
-
-// objects
-@import "objects-form";
-
 // helpers
+@import "helpers.accessibility";
 @import "helpers-text";
