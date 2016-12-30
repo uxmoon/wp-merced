@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-        if ( is_page( array( 6, 89 )  ) ) {
+        if ( is_page( array( 5, 6 )  ) ) {
 
           get_template_part( 'template-parts/content', 'page-home' );
 

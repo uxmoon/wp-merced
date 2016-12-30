@@ -4,10 +4,12 @@
 
     <?php
 
+    $myArray = array('140','141');
+
     $args = array (
       'posts_per_page' => -1,
       'post_type'      => galeria,
-      'page_id'        => 140
+      'post__in'       => $myArray
     );
 
     query_posts( $args );

@@ -22,10 +22,12 @@
 
 .wpcf7-mail-sent-ok {
   background-color: $color-cf7-green;
+  color: $color-white;
 }
 
 .wpcf7-mail-sent-ng {
   background-color: $color-cf7-red;
+  color: $color-white;
 }
 
 .wpcf7-spam-blocked {
